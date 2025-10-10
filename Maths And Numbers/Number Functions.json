@@ -1,8 +1,8 @@
 {
   "abs": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fabs.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fabs.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -19,9 +19,9 @@
     "is_os_directive": false
   },
   "ceil": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fceil.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fceil.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -38,9 +38,9 @@
     "is_os_directive": false
   },
   "choose": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fchoose.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fchoose.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -57,9 +57,9 @@
     "is_os_directive": false
   },
   "clamp": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fclamp.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fclamp.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -76,9 +76,9 @@
     "is_os_directive": false
   },
   "exp": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fexp.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fexp.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -95,9 +95,9 @@
     "is_os_directive": false
   },
   "floor": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Ffloor.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Ffloor.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -114,9 +114,9 @@
     "is_os_directive": false
   },
   "frac": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Ffrac.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Ffrac.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -133,9 +133,9 @@
     "is_os_directive": false
   },
   "irandom": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Firandom.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Firandom.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -152,9 +152,9 @@
     "is_os_directive": false
   },
   "irandom_range": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Firandom_range.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Firandom_range.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -171,9 +171,9 @@
     "is_os_directive": false
   },
   "lerp": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Flerp.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Flerp.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -190,9 +190,9 @@
     "is_os_directive": false
   },
   "ln": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fln.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fln.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -209,9 +209,9 @@
     "is_os_directive": false
   },
   "log10": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Flog10.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Flog10.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -228,9 +228,9 @@
     "is_os_directive": false
   },
   "log2": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Flog2.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Flog2.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -247,9 +247,9 @@
     "is_os_directive": false
   },
   "logn": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Flogn.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Flogn.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -266,9 +266,9 @@
     "is_os_directive": false
   },
   "math_get_epsilon": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmath_get_epsilon.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmath_get_epsilon.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -285,9 +285,9 @@
     "is_os_directive": false
   },
   "math_set_epsilon": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmath_set_epsilon.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmath_set_epsilon.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -304,9 +304,9 @@
     "is_os_directive": false
   },
   "max": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmax.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmax.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -323,9 +323,9 @@
     "is_os_directive": false
   },
   "mean": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmean.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmean.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -342,9 +342,9 @@
     "is_os_directive": false
   },
   "median": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmedian.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmedian.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -361,9 +361,9 @@
     "is_os_directive": false
   },
   "min": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmin.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fmin.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -380,9 +380,9 @@
     "is_os_directive": false
   },
   "power": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fpower.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fpower.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -399,9 +399,9 @@
     "is_os_directive": false
   },
   "random": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandom.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandom.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -418,9 +418,9 @@
     "is_os_directive": false
   },
   "random_get_seed": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandom_get_seed.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandom_get_seed.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -437,9 +437,9 @@
     "is_os_directive": false
   },
   "random_range": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandom_range.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandom_range.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -456,9 +456,9 @@
     "is_os_directive": false
   },
   "random_set_seed": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandom_set_seed.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandom_set_seed.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -475,9 +475,9 @@
     "is_os_directive": false
   },
   "randomise": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandomise.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandomise.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -494,9 +494,9 @@
     "is_os_directive": false
   },
   "randomize": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandomize.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Frandomize.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": false,
@@ -513,9 +513,9 @@
     "is_os_directive": false
   },
   "round": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fround.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fround.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -532,9 +532,9 @@
     "is_os_directive": false
   },
   "sign": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fsign.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fsign.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -551,9 +551,9 @@
     "is_os_directive": false
   },
   "sqr": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fsqr.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fsqr.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -570,9 +570,9 @@
     "is_os_directive": false
   },
   "sqrt": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Number Functions",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fsqrt.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FNumber_Functions%2Fsqrt.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
