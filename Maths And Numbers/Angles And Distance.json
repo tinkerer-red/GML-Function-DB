@@ -1,8 +1,8 @@
 {
   "angle_difference": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fangle_difference.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fangle_difference.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -19,9 +19,9 @@
     "is_os_directive": false
   },
   "arccos": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Farccos.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Farccos.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -38,9 +38,9 @@
     "is_os_directive": false
   },
   "arcsin": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Farcsin.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Farcsin.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -57,9 +57,9 @@
     "is_os_directive": false
   },
   "arctan": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Farctan.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Farctan.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -76,9 +76,9 @@
     "is_os_directive": false
   },
   "arctan2": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Farctan2.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Farctan2.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -95,9 +95,9 @@
     "is_os_directive": false
   },
   "cos": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fcos.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fcos.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -114,9 +114,9 @@
     "is_os_directive": false
   },
   "darccos": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdarccos.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdarccos.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -133,9 +133,9 @@
     "is_os_directive": false
   },
   "darcsin": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdarcsin.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdarcsin.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -152,9 +152,9 @@
     "is_os_directive": false
   },
   "darctan": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdarctan.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdarctan.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -171,9 +171,9 @@
     "is_os_directive": false
   },
   "darctan2": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdarctan2.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdarctan2.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -190,9 +190,9 @@
     "is_os_directive": false
   },
   "dcos": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdcos.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdcos.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -209,9 +209,9 @@
     "is_os_directive": false
   },
   "degtorad": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdegtorad.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdegtorad.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -228,9 +228,9 @@
     "is_os_directive": false
   },
   "distance_to_object": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdistance_to_object.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdistance_to_object.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -247,9 +247,9 @@
     "is_os_directive": false
   },
   "distance_to_point": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdistance_to_point.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdistance_to_point.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -266,9 +266,9 @@
     "is_os_directive": false
   },
   "dot_product": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -285,9 +285,9 @@
     "is_os_directive": false
   },
   "dot_product_3d": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_3d.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_3d.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -304,9 +304,9 @@
     "is_os_directive": false
   },
   "dot_product_3d_normalised": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_3d_normalised.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_3d_normalised.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -323,9 +323,9 @@
     "is_os_directive": false
   },
   "dot_product_3d_normalized": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_3d_normalized.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_3d_normalized.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -342,9 +342,9 @@
     "is_os_directive": false
   },
   "dot_product_normalised": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_normalised.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_normalised.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -361,9 +361,9 @@
     "is_os_directive": false
   },
   "dot_product_normalized": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_normalized.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdot_product_normalized.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -380,9 +380,9 @@
     "is_os_directive": false
   },
   "dsin": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdsin.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdsin.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -399,9 +399,9 @@
     "is_os_directive": false
   },
   "dtan": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdtan.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fdtan.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -418,9 +418,9 @@
     "is_os_directive": false
   },
   "lengthdir_x": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Flengthdir_x.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Flengthdir_x.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -437,9 +437,9 @@
     "is_os_directive": false
   },
   "lengthdir_y": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Flengthdir_y.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Flengthdir_y.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -456,9 +456,9 @@
     "is_os_directive": false
   },
   "point_direction": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fpoint_direction.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fpoint_direction.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -475,9 +475,9 @@
     "is_os_directive": false
   },
   "point_distance": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fpoint_distance.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fpoint_distance.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -494,9 +494,9 @@
     "is_os_directive": false
   },
   "point_distance_3d": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fpoint_distance_3d.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fpoint_distance_3d.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -513,9 +513,9 @@
     "is_os_directive": false
   },
   "radtodeg": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fradtodeg.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fradtodeg.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -532,9 +532,9 @@
     "is_os_directive": false
   },
   "sin": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fsin.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Fsin.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
@@ -551,9 +551,9 @@
     "is_os_directive": false
   },
   "tan": {
-    "review_version": null,
+    "review_version": "v2024.13.1.242",
     "category_path": "Maths And Numbers/Angles And Distance",
-    "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Ftan.htm",
+    "url": "https://manual.gamemaker.io/beta/en/#t=GameMaker_Language%2FGML_Reference%2FMaths_And_Numbers%2FAngles_And_Distance%2Ftan.htm",
     "peer_reviewed": false,
     "is_deprecated": false,
     "is_safe": true,
