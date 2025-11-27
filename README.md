@@ -95,7 +95,7 @@ Each file maps `function_name -> record`.
 * **is_global_effect** - Mutates engine-wide or game-wide global state, (e.g., `gpu_set_*`, `window_*`, `physics_world_*`, `room_*`, `random_set_seed`).
   (Additionally anything which touches those globals like getter functions will always be `is_sandboxed=false`)
 * **is_asset_reflection** - Enumerates or resolves assets by name/index or reveals asset metadata beyond explicitly exposed handles (e.g., `asset_*`, `*_get_index`, `*_get_name`, `get_ids`).
-  (Additionally unfortunately this will also include all surfaces and buffers as they are mearly indexes and not handles)
+  (Additionally unfortunately this will also include all surfaces and buffers as they are mearly indexes and not handles, as well as most `script_execute` like functions, as all built in functions are internally just indexes)
 * **is_os_dialog** - Triggers an OS/modal UI dialog (e.g., `show_message`, `show_question`, file/directory pickers).
 * **is_os_directive** - Sends a directive to the OS/driver layer (e.g., `window_*`, `display_*`, `gpu_set_*`, `mouse_set_*`, `keyboard_set_*`, `external_define`).
 
