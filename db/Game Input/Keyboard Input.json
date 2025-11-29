@@ -47,7 +47,7 @@
     "is_sandboxed": false,
     "is_file_io": false,
     "is_network_io": false,
-    "is_personal_data": false,
+    "is_personal_data": true,
     "is_platform_specific": true,
     "is_getter": true,
     "is_setter": false,
