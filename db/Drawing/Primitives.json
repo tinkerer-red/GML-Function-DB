@@ -25,7 +25,7 @@
         "peer_reviewed": null,
         "is_deprecated": false,
         "is_safe": null,
-        "is_sandboxed": null,
+        "is_sandboxed": false,
         "is_file_io": null,
         "is_network_io": null,
         "is_personal_data": null,
@@ -33,7 +33,7 @@
         "is_getter": null,
         "is_setter": null,
         "is_global_effect": null,
-        "is_asset_reflection": null,
+        "is_asset_reflection": true,
         "is_os_dialog": null,
         "is_os_directive": null
     },
