@@ -1164,11 +1164,10 @@ def main():
         print("DB folder not found:", DB_DIR)
         return
 
-    for name in os.listdir(DB_DIR):
-        if not name.lower().endswith(".json"):
-            continue
-        full_path = os.path.join(DB_DIR, name)
-        process_json_file(full_path)
+    for root, dirs, files in os.walk(DB_DIR):
+        for name in files:
+            if name.lower().endswith(".json"):
+                process_json_file(os.path.join(root, name))
 
 
 if __name__ == "__main__":
