@@ -1,0 +1,54 @@
+name: Run heuristic review queues
+
+on:
+  workflow_dispatch:
+    inputs:
+      heuristic:
+        description: "Named heuristic to run. Leave empty to run all heuristics."
+        required: false
+        default: ""
+      format:
+        description: "Output format."
+        required: true
+        default: "summary"
+        type: choice
+        options:
+          - summary
+          - table
+          - names
+          - json
+          - csv
+      fail_on_results:
+        description: "Fail the workflow if any selected heuristic returns results."
+        required: true
+        default: false
+        type: boolean
+
+jobs:
+  heuristics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run heuristic review queues
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          args=(--heuristics --format "${{ inputs.format }}")
+
+          if [[ -n "${{ inputs.heuristic }}" ]]; then
+            args=(--heuristic "${{ inputs.heuristic }}" --format "${{ inputs.format }}" --limit 0)
+          fi
+
+          if [[ "${{ inputs.fail_on_results }}" == "true" ]]; then
+            args+=(--fail-on-results)
+          fi
+
+          python src/validate.py "${args[@]}"

@@ -1,0 +1,14 @@
+{
+    "layer_get_flexpanel_node": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/UI Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FUI_Layers%2Flayer_get_flexpanel_node.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": false,
+        "is_getter": true,
+        "is_asset_reflection": true,
+        "is_return_pure": true,
+        "notes": "Retrieves the root flexpanel node for a UI layer by layer name/handle, exposing UI-layer node trees that were not individually exposed."
+    }
+}

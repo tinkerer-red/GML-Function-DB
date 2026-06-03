@@ -1,0 +1,230 @@
+{
+    "schema_version":  1,
+    "facts":  [
+                  {
+                      "name":  "unsafe_capabilities_force_is_safe_false",
+                      "description":  "Disk, network, personal data, and OS dialog capabilities are never safe for arbitrary mod use.",
+                      "when_any_true":  [
+                                            "is_file_io",
+                                            "is_network_io",
+                                            "is_personal_data",
+                                            "is_os_dialog",
+                                            "is_os_reflection",
+                                            "is_callback_invoker"
+                                        ],
+                      "then_field":  "is_safe",
+                      "then_value":  false
+                  },
+                  {
+                      "name":  "sandbox_escape_forces_is_sandboxed_false",
+                      "description":  "Asset, runner, and OS reflection are sandbox escapes by definition.",
+                      "when_any_true":  [
+                                            "is_file_io",
+                                            "is_network_io",
+                                            "is_os_dialog",
+                                            "is_asset_reflection",
+                                            "is_global_reflection",
+                                            "is_os_reflection",
+                                            "is_callback_invoker"
+                                        ],
+                      "then_field":  "is_sandboxed",
+                      "then_value":  false
+                  },
+                  {
+                      "name":  "compile_time_possible_requires_safe_true",
+                      "description":  "Compile-time reduction is only valid for functions that are safe for arbitrary mod use.",
+                      "when_any_true":  [
+                                            "is_compile_time_possible"
+                                        ],
+                      "then_field":  "is_safe",
+                      "then_value":  true
+                  },
+                  {
+                      "name":  "compile_time_possible_requires_sandboxed_true",
+                      "description":  "Compile-time reduction is only valid for functions that do not depend on non-exposed runtime state.",
+                      "when_any_true":  [
+                                            "is_compile_time_possible"
+                                        ],
+                      "then_field":  "is_sandboxed",
+                      "then_value":  true
+                  },
+                  {
+                      "name":  "compile_time_possible_requires_return_pure_true",
+                      "description":  "Compile-time reduction must produce a meaningful return value.",
+                      "when_any_true":  [
+                                            "is_compile_time_possible"
+                                        ],
+                      "then_field":  "is_return_pure",
+                      "then_value":  true
+                  },
+                  {
+                      "name":  "spec_deprecated_requires_is_deprecated",
+                      "description":  "Functions marked Deprecated=\"true\" in GmlSpec must be marked is_deprecated in the DB.",
+                      "forbid":  {
+                                     "source":  "db",
+                                     "all":  [
+                                                 "spec_deprecated=true"
+                                             ],
+                                     "none":  [
+                                                  "is_deprecated"
+                                              ]
+                                 },
+                      "message":  "GmlSpec marks this function deprecated; set is_deprecated=true."
+                  },
+                  {
+                      "name":  "getter_must_return_value",
+                      "description":  "Getter records must not be documented as returning Undefined.",
+                      "forbid":  {
+                                     "source":  "db",
+                                     "all":  [
+                                                 "is_getter",
+                                                 "return_type=Undefined"
+                                             ],
+                                     "none":  [
+                                                  "function_name~=(^achievement_get_|^ads_engagement_|^audio_system$|^dbg_control_exists$|^uwp_device_touchscreen_available$|^win8_(device_touchscreen_available|license_trial_version|settingscharm_get_xaml_property)$|^window_get_borderless_fullscreen$|^winphone_license_trial_version$)",
+                                                  "is_deprecated",
+                                                  "category_path~Rollback",
+                                                  "peer_reviewed"
+                                              ]
+                                 },
+                      "message":  "A getter should expose a return value; remove is_getter or document an explicit exception."
+                  },
+                  {
+                      "name":  "constant_all_argument_is_not_sandboxed",
+                      "description":  "Functions accepting Constant.All can reach outside a curated exposed-handle set.",
+                      "forbid":  {
+                                     "source":  "db",
+                                     "all":  [
+                                                 "param_types~Constant.All",
+                                                 "is_sandboxed=true"
+                                             ],
+                                     "none":  [
+                                                  "is_deprecated",
+                                                  "category_path~Rollback",
+                                                  "peer_reviewed"
+                                              ]
+                                 },
+                      "message":  "Constant.All must not remain sandboxed."
+                  },
+                  {
+                      "name":  "string_or_handle_resolution_is_not_sandboxed",
+                      "description":  "String-or-handle resource arguments can resolve non-exposed resources by name.",
+                      "forbid":  {
+                                     "source":  "db",
+                                     "all":  [
+                                                 "param_types~=String[,|]Id\\.",
+                                                 "is_sandboxed=true"
+                                             ],
+                                     "none":  [
+                                                  "function_name~=(^skeleton_bone_state_(get|set)$)",
+                                                  "is_deprecated",
+                                                  "category_path~Rollback",
+                                                  "peer_reviewed"
+                                              ]
+                                 },
+                      "message":  "String-or-handle resource resolution must be reviewed as a sandbox escape."
+                  },
+                  {
+                      "name":  "unsafe_false_requires_explanation",
+                      "description":  "Unsafe records need an explicit unsafe capability or source note.",
+                      "forbid":  {
+                                     "source":  "db",
+                                     "all":  [
+                                                 "is_safe=false"
+                                             ],
+                                     "none":  [
+                                                  "is_file_io",
+                                                  "is_network_io",
+                                                  "is_personal_data",
+                                                  "is_os_dialog",
+                                                  "is_os_reflection",
+                                                  "is_callback_invoker",
+                                                  "is_deprecated",
+                                                  "category_path~Rollback",
+                                                  "peer_reviewed",
+                                                  "notes"
+                                              ]
+                                 },
+                      "message":  "is_safe=false must have a capability flag or reviewer note explaining why."
+                  },
+                  {
+                      "name":  "sandbox_false_requires_explanation",
+                      "description":  "Unsandboxed records need an explicit sandbox escape capability.",
+                      "forbid":  {
+                                     "source":  "db",
+                                     "all":  [
+                                                 "is_sandboxed=false"
+                                             ],
+                                     "none":  [
+                                                  "is_file_io",
+                                                  "is_network_io",
+                                                  "is_os_dialog",
+                                                  "is_asset_reflection",
+                                                  "is_global_reflection",
+                                                  "is_os_reflection",
+                                                  "is_callback_invoker",
+                                                  "is_deprecated",
+                                                  "category_path~Rollback",
+                                                  "peer_reviewed"
+                                              ]
+                                 },
+                      "message":  "is_sandboxed=false must have an explicit sandbox escape flag."
+                  },
+                  {
+                      "name":  "compile_time_possible_has_no_runtime_side_effects",
+                      "description":  "Compile-time candidates must not depend on state, IO, reflection, lifecycle, or mutation flags.",
+                      "forbid":  {
+                                     "source":  "db",
+                                     "all":  [
+                                                 "is_compile_time_possible"
+                                             ],
+                                     "any":  [
+                                                 "is_file_io",
+                                                 "is_network_io",
+                                                 "is_os_dialog",
+                                                 "is_os_reflection",
+                                                 "is_asset_reflection",
+                                                 "is_global_reflection",
+                                                 "is_lifecycle_state"
+                                             ],
+                                     "none":  [
+                                                  "is_deprecated",
+                                                  "category_path~Rollback",
+                                                  "peer_reviewed"
+                                              ]
+                                 },
+                      "message":  "Compile-time reduction must not require runtime side effects or reflection."
+                  },
+                  {
+                      "name":  "function_return_requires_asset_reflection",
+                      "description":  "Functions returning callable references expose script/method assets.",
+                      "forbid":  {
+                                     "source":  "db",
+                                     "all":  [
+                                                 "return_type=Function"
+                                             ],
+                                     "none":  [
+                                                  "is_asset_reflection",
+                                                  "is_deprecated",
+                                                  "category_path~Rollback",
+                                                  "peer_reviewed"
+                                              ]
+                                 },
+                      "message":  "Function return values must be marked as asset reflection."
+                  },
+                  {
+                      "name":  "physics_fixture_numeric_ids_require_global_reflection",
+                      "description":  "Physics fixture template IDs are plain numeric indexes into the runner-global fixture table rather than type-protected refs.",
+                      "forbid":  {
+                                     "source":  "db",
+                                     "all":  [
+                                                 "function_name~=(^physics_fixture_)"
+                                             ],
+                                     "none":  [
+                                                  "is_global_reflection"
+                                              ]
+                                 },
+                      "message":  "physics_fixture_* APIs use runner-global numeric fixture IDs; set is_global_reflection=true."
+                  }
+              ]
+}

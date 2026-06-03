@@ -1,0 +1,28 @@
+name: Validate catalog
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate database
+        run: python src/validate.py
+
+      - name: Verify normalized source
+        run: |
+          python src/validate.py --normalize --write
+          git diff --exit-code -- db
+
+      - name: Verify resolved export
+        run: python src/builder.py

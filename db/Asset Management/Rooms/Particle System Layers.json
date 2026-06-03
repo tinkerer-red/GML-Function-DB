@@ -1,0 +1,171 @@
+{
+    "layer_particle_alpha": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_alpha.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_particle_angle": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_angle.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_particle_blend": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_blend.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_particle_x": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_x.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_particle_xscale": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_xscale.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_particle_y": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_y.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_particle_yscale": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_yscale.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_particle_get_alpha": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_alpha.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_particle_get_angle": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_angle.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_particle_get_blend": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_blend.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_particle_get_x": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_x.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_particle_get_xscale": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_xscale.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_particle_get_y": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_y.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_particle_get_yscale": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_yscale.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_particle_get_id": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_id.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": false,
+        "is_getter": true,
+        "is_asset_reflection": true,
+        "is_return_pure": true,
+        "notes": "Accepts a layer name string and particle element name, allowing lookup of room-layer particle elements outside an explicitly exposed handle set."
+    },
+    "layer_particle_get_instance": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_instance.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": false,
+        "is_getter": true,
+        "is_asset_reflection": true,
+        "is_return_pure": true,
+        "notes": "Returns the particle system instance handle associated with the supplied layer element, which can reveal a related runtime resource outside the original exposed handle."
+    },
+    "layer_particle_get_system": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Asset Management/Rooms/Particle System Layers",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FAsset_Management%2FRooms%2FParticle_System_Layers%2Flayer_particle_get_system.htm",
+        "peer_reviewed": false,
+        "is_safe": true,
+        "is_sandboxed": false,
+        "is_getter": true,
+        "is_asset_reflection": true,
+        "is_return_pure": true,
+        "notes": "Returns the particle system asset assigned to the supplied layer element, which may reveal an asset outside the host allowlist."
+    }
+}

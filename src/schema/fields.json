@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "record_key_order": [
+    "review_version",
+    "category_path",
+    "url",
+    "peer_reviewed",
+    "is_deprecated",
+    "is_safe",
+    "is_sandboxed",
+    "is_file_io",
+    "is_network_io",
+    "is_personal_data",
+    "is_platform_specific",
+    "is_getter",
+    "is_setter",
+    "is_global_reflection",
+    "is_asset_reflection",
+    "is_os_dialog",
+    "is_os_reflection",
+    "is_lifecycle_state",
+    "is_async_reflection",
+    "is_callback_invoker",
+    "is_return_pure",
+    "is_compile_time_possible",
+    "notes"
+  ],
+  "fields": {
+    "review_version": {
+      "required": true,
+      "types": [
+        "string",
+        "null"
+      ],
+      "description": "Tag of the last manual or policy review that touched this entry."
+    },
+    "category_path": {
+      "required": true,
+      "types": [
+        "string",
+        "null"
+      ],
+      "description": "Manual category path for the function. Null only if unknown."
+    },
+    "url": {
+      "required": true,
+      "types": [
+        "string",
+        "null"
+      ],
+      "description": "Manual page URL for the function. Anchor form is preferred when available."
+    },
+    "peer_reviewed": {
+      "required": true,
+      "types": [
+        "boolean",
+        "null"
+      ],
+      "description": "True when a second reviewer confirmed the flags; false for self-reviewed; null when not reviewed."
+    },
+    "is_deprecated": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Function is marked as deprecated in the spec/manual."
+    },
+    "is_safe": {
+      "required": true,
+      "types": [
+        "boolean",
+        "null"
+      ],
+      "description": "Function is acceptable for arbitrary mod use."
+    },
+    "is_sandboxed": {
+      "required": true,
+      "types": [
+        "boolean",
+        "null"
+      ],
+      "description": "Function cannot access non-exposed project data and cannot read or affect global engine state outside exposed handles."
+    },
+    "is_file_io": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Reads/writes files, folders, or paths, or launches OS file pickers."
+    },
+    "is_network_io": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Performs HTTP, sockets, matchmaking, platform network APIs, analytics, cloud, or any network traffic."
+    },
+    "is_personal_data": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Accesses or can reliably infer user/system information."
+    },
+    "is_platform_specific": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Function is tied to a platform or service."
+    },
+    "is_getter": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Primarily returns state without mutation."
+    },
+    "is_setter": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Primarily mutates state."
+    },
+    "is_global_reflection": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Reads or mutates engine-wide or game-wide global state."
+    },
+    "is_asset_reflection": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Creates, enumerates, resolves, or reveals project-level assets beyond explicitly exposed handles."
+    },
+    "is_os_dialog": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Triggers an OS/modal UI dialog."
+    },
+    "is_os_reflection": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Reads from, reveals, or mutates OS, device, window, browser, native extension, or host environment state."
+    },
+    "is_lifecycle_state": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Participates in an ordered active workflow where calls must be paired or sequenced, such as begin/end, open/close, or create/save-finalize."
+    },
+    "is_compile_time_possible": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "True when the function can be reduced to a pure return at compile time, but only if every argument is expressible as a compile-time literal."
+    },
+    "notes": {
+      "required": false,
+      "source_only": true,
+      "types": [
+        "string"
+      ],
+      "description": "Reviewer notes for non-obvious flags, platform quirks, policy assumptions, or follow-up context. This field is validated in source records but omitted from resolved exports."
+    },
+    "is_return_pure": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Function primarily exists to produce a return value; unused returns may be warned, errored, or removed when valid."
+    },
+    "is_async_reflection": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Starts, participates in, or reflects an asynchronous workflow or async event result."
+    },
+    "is_callback_invoker": {
+      "required": false,
+      "default": false,
+      "types": [
+        "boolean"
+      ],
+      "description": "Invokes, schedules, stores, or later calls a supplied function/script/method callback."
+    }
+  }
+}

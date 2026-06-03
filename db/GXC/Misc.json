@@ -1,0 +1,16 @@
+{
+    "gx_share": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "GXC/Misc",
+        "url": "https://manual.gamemaker.io/monthly/en/#t=GameMaker_Language%2FGML_Reference%2FGXC%2FMisc%2Fgx_share.htm",
+        "peer_reviewed": false,
+        "is_safe": false,
+        "is_sandboxed": false,
+        "is_network_io": true,
+        "is_platform_specific": true,
+        "is_os_dialog": true,
+        "is_os_reflection": true,
+        "is_async_reflection": true,
+        "notes": "GX.games Web Share API call for sharing a URL or image buffer through browser/native share UI; completion arrives through Async - Social."
+    }
+}

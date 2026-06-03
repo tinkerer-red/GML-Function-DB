@@ -1,0 +1,507 @@
+{
+    "schema_version":  1,
+    "heuristics":  [
+                       {
+                           "name":  "getter_name_missing_getter",
+                           "description":  "Names that look like getters but are not marked is_getter.",
+                           "source":  "db",
+                           "any":  [
+                                       "function_name~=(^get_|_get_|_get$|^is_|_is_|_is$|_exists$|^has_|_has_)"
+                                   ],
+                           "none":  [
+                                        "is_getter",
+                                        "function_name=http_get",
+                                        "function_name~=(^buffer_get_surface(_depth)?$|^iap_(product|purchase)_details$|^skeleton_(bone_(data|state)_get|find_slot)$)",
+                                        "category_path~Rollback",
+                                        "is_deprecated",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "is_getter",
+                                          "is_setter",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "setter_name_missing_setter",
+                           "description":  "Names that look like direct setters but are not marked is_setter.",
+                           "source":  "db",
+                           "any":  [
+                                       "function_name~=(^set_|_set_|_set$|^enable_|_enable_|_enable$|^disable_|_disable_|_disable$)"
+                                   ],
+                           "none":  [
+                                        "is_setter",
+                                        "is_getter",
+                                        "function_name~=(^tile_set_(empty|flip|index|mirror|rotate)$)",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "is_getter",
+                                          "is_setter",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "lifecycle_name_missing_lifecycle_state",
+                           "description":  "Begin/end/open/close/save names that may imply lifecycle state but are not marked is_lifecycle_state.",
+                           "source":  "db",
+                           "any":  [
+                                       "function_name~=(^begin_|_begin_|_begin$|^end_|_end_|_end$|^open_|_open_|_open$|^close_|_close_|_close$)",
+                                       "function_name~=(^gif_save(_buffer)?$|^zip_(create|save)$)"
+                                   ],
+                           "none":  [
+                                        "is_lifecycle_state",
+                                        "function_name~=(^get_|_get_|^is_|_is_|^audio_sound_loop_end$|^camera_set_(begin|end)_script$|^game_end$|^layer_script_(begin|end)$|^path_end$|^string_trim_end$|^url_open)",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "is_setter",
+                                          "is_global_reflection",
+                                          "is_asset_reflection",
+                                          "is_file_io",
+                                          "is_lifecycle_state",
+                                          "is_sandboxed",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "undefined_setter_name_missing_setter",
+                           "description":  "Undefined-returning direct setter names that are not marked is_setter.",
+                           "source":  "db",
+                           "all":  [
+                                       "return_type=Undefined"
+                                   ],
+                           "any":  [
+                                       "function_name~=(^set_|_set_|_set$|^enable_|_enable_|_enable$|^disable_|_disable_|_disable$)"
+                                   ],
+                           "none":  [
+                                        "is_setter",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "is_setter",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "zero_arg_return_unclassified",
+                           "description":  "Zero-argument value-returning functions that are not marked as getter, setter, global reflection, or asset reflection.",
+                           "source":  "db",
+                           "all":  [
+                                       "param_count=0",
+                                       "returns_value=true"
+                                   ],
+                           "none":  [
+                                        "is_getter",
+                                        "is_setter",
+                                        "is_global_reflection",
+                                        "is_asset_reflection",
+                                        "function_name~=(^.*_create(_.*)?$|^.*_build_.*$)",
+                                        "return_type~Id.",
+                                        "return_type~Struct",
+                                        "return_type~Array",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "is_safe",
+                                          "is_sandboxed",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "one_arg_setter_unscoped_target",
+                           "description":  "One-argument setters whose target is not obviously scoped by handle, asset, container, IO, or returned resource.",
+                           "source":  "db",
+                           "all":  [
+                                       "param_count=1",
+                                       "is_setter"
+                                   ],
+                           "none":  [
+                                        "is_global_reflection",
+                                        "is_asset_reflection",
+                                        "param_types~Id.",
+                                        "param_types~Pointer.",
+                                        "param_types~Struct.",
+                                        "param_types~Array",
+                                        "param_types~Asset.",
+                                        "param_types~Constant.TimeSource",
+                                        "return_type~Id.",
+                                        "is_file_io",
+                                        "is_network_io",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "param_names",
+                                          "param_types",
+                                          "is_global_reflection",
+                                          "is_asset_reflection",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "file_keyword_missing_file_io",
+                           "description":  "File/path/category keywords that are not marked is_file_io.",
+                           "source":  "db",
+                           "any":  [
+                                       "function_name~file",
+                                       "function_name~filename",
+                                       "function_name~directory",
+                                       "function_name~ini_",
+                                       "function_name~zip_",
+                                       "function_name~csv",
+                                       "function_name~buffer_load",
+                                       "function_name~buffer_save",
+                                       "category_path~File Handling"
+                                   ],
+                           "none":  [
+                                        "is_file_io",
+                                        "function_name~=(^(base64|json)_(decode|encode|parse|stringify)$|^(md5|sha1)_string_(unicode|utf8)$|^ini_open_from_string$|^file_text_open_from_string$|^filename_(change_ext|dir|drive|ext|name|path)$)",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "is_file_io",
+                                          "is_safe",
+                                          "is_sandboxed",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "network_or_platform_keyword_missing_flags",
+                           "description":  "Network/platform/service keywords that are not marked is_network_io or is_platform_specific.",
+                           "source":  "db",
+                           "any":  [
+                                       "function_name~http",
+                                       "function_name~network",
+                                       "function_name~socket",
+                                       "function_name~cloud",
+                                       "function_name~rollback",
+                                       "function_name~iap",
+                                       "function_name~achievement",
+                                       "function_name~=^push_",
+                                       "function_name~steam",
+                                       "function_name~xbox",
+                                       "function_name~url",
+                                       "category_path~Networking",
+                                       "category_path~In-App Purchases",
+                                       "category_path~Rollback",
+                                       "category_path~Steam",
+                                       "category_path~Xbox"
+                                   ],
+                           "none":  [
+                                        "is_network_io",
+                                        "is_platform_specific",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "is_network_io",
+                                          "is_platform_specific",
+                                          "is_safe",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "async_reflection_candidate_missing_flag",
+                           "description":  "Async starters, async workflow participants, or async event result observers that are not marked is_async_reflection.",
+                           "source":  "db",
+                           "any":  [
+                                       "function_name~=(async|^http_(get|get_file|post_string|request)$|^network_connect(_raw)?_async$|^audio_group_(load|unload|load_progress)$|^sprite_(add|add_ext|replace)$|^get_(integer|string|login)_async$|^show_(message|question)_async$|^zip_unzip_async$)"
+                                   ],
+                           "none":  [
+                                        "is_async_reflection",
+                                        "function_name~=(^event_perform_async$|^http_(get|set)_(connect_timeout|request_crossorigin)$|^sprite_add_from_surface$|^url_)",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "param_names",
+                                          "param_types",
+                                          "is_async_reflection",
+                                          "is_file_io",
+                                          "is_network_io",
+                                          "is_os_dialog",
+                                          "is_platform_specific",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "callback_invoker_candidate_missing_flag",
+                           "description":  "Functions that accept callbacks or scripts and may invoke or store them but are not marked is_callback_invoker.",
+                           "source":  "db",
+                           "any":  [
+                                       "param_types~=(^|,)Function(,|$)|Asset\\.GMScript",
+                                       "function_name~=(^script_execute|^method_call$)"
+                                   ],
+                           "none":  [
+                                        "is_callback_invoker",
+                                        "function_name~=(^is_instanceof$|^method$|^method_get_|^script_(exists|get_name)$|^static_get$)",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "param_names",
+                                          "param_types",
+                                          "is_callback_invoker",
+                                          "is_safe",
+                                          "is_sandboxed",
+                                          "is_asset_reflection",
+                                          "notes",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "os_reflection_keyword_missing_os_reflection",
+                           "description":  "OS/window/device/native environment keywords that are not marked is_os_reflection.",
+                           "source":  "db",
+                           "any":  [
+                                       "function_name~window_",
+                                       "function_name~display_",
+                                       "function_name~keyboard_set_",
+                                       "function_name~mouse_set_",
+                                       "function_name~external_"
+                                   ],
+                           "none":  [
+                                        "is_os_reflection",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "is_os_reflection",
+                                          "is_global_reflection",
+                                          "is_safe",
+                                          "is_sandboxed",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "non_lifecycle_getter_setter_overlap",
+                           "description":  "Functions marked as both getter and setter outside lifecycle state APIs.",
+                           "source":  "db",
+                           "all":  [
+                                       "is_getter",
+                                       "is_setter"
+                                   ],
+                           "none":  [
+                                        "is_lifecycle_state",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "param_names",
+                                          "param_types",
+                                          "is_getter",
+                                          "is_setter",
+                                          "is_lifecycle_state",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "bool_return_missing_getter",
+                           "description":  "Bool-returning non-mutators that may be state/query functions but are not marked is_getter.",
+                           "source":  "db",
+                           "all":  [
+                                       "return_type=Bool"
+                                   ],
+                           "none":  [
+                                        "is_getter",
+                                        "is_setter",
+                                        "is_lifecycle_state",
+                                        "function_name~=(^bool$|^array_(all|any|contains|contains_ext|equals)$|^point_in_|^date_valid_datetime$)",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed",
+                                        "is_file_io",
+                                        "is_os_dialog",
+                                        "is_global_reflection",
+                                        "notes"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "param_names",
+                                          "param_types",
+                                          "is_getter",
+                                          "is_setter",
+                                          "is_safe",
+                                          "is_sandboxed",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "platform_category_missing_platform_specific",
+                           "description":  "Platform/service categories, names, or documentation keywords that are not marked is_platform_specific.",
+                           "source":  "db",
+                           "any":  [
+                                       "category_path~=(Xbox|Steam|PlayStation|GX\\.games|UWP|HTML5|Web And HTML5|Live Wallpapers|In-App Purchases|In App Purchases|Push Notifications)",
+                                       "function_name~=(^gx_|^mac_|^steam_|^xbox_|^uwp_|^win8_|^winphone_|^ps4_|^ps5_|^playstation_|^browser_|^url_open|^clickable_|^wallpaper_|^keyboard_virtual_|^shop_leave_rating$)",
+                                       "description~=(\\b(Windows|Mac|macOS|Linux|Ubuntu|Android|iOS|HTML5|UWP|Xbox|PlayStation|PS4|PS5|Steam|GX\\.games|Emscripten|AppStore|web browser)\\b)"
+                                   ],
+                           "none":  [
+                                        "is_platform_specific",
+                                        "function_name~=(^asset_|^font_|^script_get_name$)",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "is_platform_specific",
+                                          "is_network_io",
+                                          "is_os_reflection",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "return_pure_candidate_missing_flag",
+                           "description":  "Review queue for return-value-significant GmlSpec functions not marked is_return_pure.",
+                           "source":  "db",
+                           "all":  [
+                                       "spec_pure=true",
+                                       "returns_value=true",
+                                       "!is_setter",
+                                       "!is_return_pure"
+                                   ],
+                           "none":  [
+                                        "return_type=Undefined",
+                                        "return_type=Void",
+                                        "function_name~=(^audio_destroy_stream$|^zip_unzip(_async)?$)",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "param_names",
+                                          "param_types",
+                                          "spec_pure",
+                                          "is_return_pure",
+                                          "is_getter",
+                                          "is_setter",
+                                          "is_compile_time_possible",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "compile_time_candidate_missing_flag",
+                           "description":  "Return-value-significant, scalar-ish, safe, sandboxed GmlSpec functions not marked is_compile_time_possible.",
+                           "source":  "db",
+                           "all":  [
+                                       "spec_pure=true",
+                                       "returns_value=true",
+                                       "is_safe=true",
+                                       "is_sandboxed=true",
+                                       "!is_getter",
+                                       "!is_setter",
+                                       "!is_file_io",
+                                       "!is_network_io",
+                                       "!is_personal_data",
+                                       "!is_platform_specific",
+                                       "!is_global_reflection",
+                                       "!is_asset_reflection",
+                                       "!is_os_dialog",
+                                       "!is_os_reflection",
+                                       "!is_lifecycle_state",
+                                       "!is_compile_time_possible"
+                                   ],
+                           "none":  [
+                                        "return_type~Id.",
+                                        "return_type~Asset.",
+                                        "return_type~Struct",
+                                        "return_type~Array",
+                                        "return_type~Pointer",
+                                        "return_type~Function",
+                                        "param_types~Id.",
+                                        "param_types~Asset.",
+                                        "param_types~Struct",
+                                        "param_types~Array",
+                                        "param_types~Pointer",
+                                        "param_types~Function",
+                                        "function_name=place_snapped",
+                                        "is_deprecated",
+                                        "category_path~Rollback",
+                                        "peer_reviewed",
+                                        "category_path~Date And Time"
+                                    ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "param_types",
+                                          "spec_pure",
+                                          "is_compile_time_possible",
+                                          "category_path",
+                                          "db_path"
+                                      ]
+                       },
+                       {
+                           "name":  "spec_function_missing_db",
+                           "description":  "GmlSpec functions that do not yet have a catalog record.",
+                           "source":  "all",
+                           "all":  [
+                                       "spec_exists=true",
+                                       "db_exists=false"
+                                   ],
+                           "fields":  [
+                                          "function_name",
+                                          "return_type",
+                                          "param_names",
+                                          "param_types",
+                                          "spec_deprecated",
+                                          "description"
+                                      ]
+                       }
+                   ]
+}

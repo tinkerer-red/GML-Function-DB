@@ -1,0 +1,229 @@
+{
+    "layer_tile_alpha": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true,
+        "notes": "Compatibility-only legacy tile mutator. This member operates on an explicitly supplied tile-element handle, so it remains sandboxed despite being deprecated."
+    },
+    "layer_tile_blend": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_tile_change": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_tile_create": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": false,
+        "is_setter": true,
+        "is_asset_reflection": true,
+        "notes": "Compatibility-only legacy tile creator. It accepts a layer name or ID and a tileset asset, so it can resolve room/project state beyond an exposed tile-element handle."
+    },
+    "layer_tile_destroy": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_tile_exists": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": false,
+        "is_getter": true,
+        "is_asset_reflection": true,
+        "is_return_pure": true,
+        "notes": "Compatibility-only legacy tile query. It accepts a layer name or ID, so it can resolve room state beyond an explicitly exposed tile-element handle."
+    },
+    "layer_tile_get_alpha": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_tile_get_blend": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_tile_get_region": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_tile_get_sprite": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": false,
+        "is_getter": true,
+        "is_asset_reflection": true,
+        "is_return_pure": true,
+        "notes": "Compatibility-only legacy tile query. It reveals the sprite asset referenced by an exposed tile element, crossing the asset-reflection boundary."
+    },
+    "layer_tile_get_visible": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_tile_get_x": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_tile_get_xscale": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_tile_get_y": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_tile_get_yscale": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_getter": true,
+        "is_return_pure": true
+    },
+    "layer_tile_region": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_tile_visible": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_tile_x": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_tile_xscale": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_tile_y": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    },
+    "layer_tile_yscale": {
+        "review_version": "2024.1400.5.1027",
+        "category_path": "Additional Information/Compatibility Functions",
+        "url": "https://manual.gamemaker.io/monthly/en/Additional_Information/Compatibility_Functions.htm",
+        "peer_reviewed": false,
+        "is_deprecated": true,
+        "is_safe": true,
+        "is_sandboxed": true,
+        "is_setter": true
+    }
+}
